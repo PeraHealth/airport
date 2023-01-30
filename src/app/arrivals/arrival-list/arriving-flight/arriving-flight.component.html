@@ -1,0 +1,10 @@
+<a href="#" class="list-group-item clearfix" (click)="onSelected()">
+  <div class="float-lg-left">
+    <h4 class="list-group-item-heading">{{ flight.location }}</h4>
+    <p class="list-group-item-text">{{ flight.scheduledTime }}</p>
+    <p style="color: green" class="list-group-item-text">{{ flight.status }}</p>
+  </div>
+  <span class="float-lg-right">
+    <h3 class="list-group-item-heading">{{ flight.flightNumber }}</h3>
+  </span>
+</a>

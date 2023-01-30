@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1>{{ flight.flightNumber }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <h4>Destination: {{ flight.location }}</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <h5>Departure time: {{ flight.scheduledTime }}</h5>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >Manage Flight</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Edit Flight</a>
+        <a class="dropdown-item" href="#">Delete Flight</a>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-dark" type="button" (click)="onChangeStatus()">Change Status</button>
+  </div>
+</div>
